@@ -3,7 +3,8 @@ import houseColors from '../helpers/data/houseColors';
 
 const cardCreator = (divId, array) => {
   let card = '';
-  for (let i = 0; i < array.length; i + 1) {
+  // eslint-disable-next-line no-plusplus
+  for (let i = 0; i < array.length; i++) {
     if (divId.includes('voldermort')) {
       card += `<div class="card m-3" style="width: 18rem;">
                     <img class="card-img-top" src="https://vignette.wikia.nocookie.net/harrypotter/images/d/d4/Death_Eaters_WBST.png/revision/latest?cb=20161205041948" alt="Card image cap">
